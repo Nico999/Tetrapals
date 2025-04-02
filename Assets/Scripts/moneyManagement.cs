@@ -7,18 +7,15 @@ public class moneyManagement : MonoBehaviour
     public int startMoney;
     public int currentMoney; 
     
-    
     // Start is called before the first frame update
     void Start()
     {
         currentMoney = startMoney;
     }
 
-
     // Update is called once per frame
-    //will make fixed update in future
-    void Update() 
-     
+    // will make fixed update in future
+    void Update()
     {
         if(Input.GetKeyDown(KeyCode.P))
         {
@@ -31,7 +28,6 @@ public class moneyManagement : MonoBehaviour
         }
     }
 
-    
     // Increases current money by the specified integer
     public void GainMoney(int gainMoney) 
     {
@@ -39,7 +35,7 @@ public class moneyManagement : MonoBehaviour
         Debug.Log("CurrentAmount:" + currentMoney);
     }
    
-    //   for every 10 gold, gain +1 on round start
+    // for every 10 gold, gain +1 on round start
     public void InterestType1()
     {
         if (currentMoney != 0)
